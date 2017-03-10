@@ -6,7 +6,7 @@
   "author": "Rhio Kim <rhio.kim@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint 'src/**/*.@(js|jsx)'",
+    "lint": "eslint --format=node_modules/eslint-formatter-pretty 'src/**/*.@(js|jsx)'",
     "lint:msg": "validate-commit-msg",
     "commit": "git cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
@@ -27,6 +27,7 @@
     "commitizen": "^2.9.6",
     "conventional-changelog-cli": "^1.2.0",
     "eslint": "^3.17.1",
+    "eslint-formatter-pretty": "^1.1.0",
     "husky": "^0.13.2",
     "validate-commit-msg": "^2.11.2"
   }
