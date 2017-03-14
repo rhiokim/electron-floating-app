@@ -13,6 +13,9 @@
     "precommit": "npm run lint",
     "commitmsg": "npm run lint:msg"
   },
+  "eslintConfig": {
+    "extends": "google"
+  },
   "config": {
     "validate-commit-msg": {
       "preset": "angular",
@@ -27,6 +30,7 @@
     "commitizen": "^2.9.6",
     "conventional-changelog-cli": "^1.2.0",
     "eslint": "^3.17.1",
+    "eslint-config-google": "^0.7.1",
     "eslint-formatter-pretty": "^1.1.0",
     "husky": "^0.13.2",
     "validate-commit-msg": "^2.11.2"
