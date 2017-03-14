@@ -14,7 +14,10 @@
     "commitmsg": "npm run lint:msg"
   },
   "eslintConfig": {
-    "extends": "google"
+    "extends": [
+      "eslint:recommended",
+      "google"
+    ]
   },
   "config": {
     "validate-commit-msg": {
@@ -30,8 +33,12 @@
     "commitizen": "^2.9.6",
     "conventional-changelog-cli": "^1.2.0",
     "eslint": "^3.17.1",
-    "eslint-config-google": "^0.7.1",
+    "eslint-config-standard": "^7.0.1",
     "eslint-formatter-pretty": "^1.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.1.1",
     "husky": "^0.13.2",
     "validate-commit-msg": "^2.11.2"
   }
