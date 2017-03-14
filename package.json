@@ -14,10 +14,7 @@
     "commitmsg": "npm run lint:msg"
   },
   "eslintConfig": {
-    "extends": [
-      "eslint:recommended",
-      "google"
-    ]
+    "extends": "standard"
   },
   "config": {
     "validate-commit-msg": {
