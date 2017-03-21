@@ -7,14 +7,21 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint --format=node_modules/eslint-formatter-pretty 'src/**/*.@(js|jsx)'",
+    "flow": "flow",
     "lint:msg": "validate-commit-msg",
     "commit": "git cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
-    "precommit": "npm run lint",
+    "precommit": "npm run lint && flow",
     "commitmsg": "npm run lint:msg"
   },
   "eslintConfig": {
-    "extends": "standard"
+    "parser": "babel-eslint",
+    "extends": [
+      "plugin:flowtype/recommended"
+    ],
+    "plugins": [
+      "flowtype"
+    ]
   },
   "config": {
     "validate-commit-msg": {
@@ -27,16 +34,18 @@
     }
   },
   "devDependencies": {
+    "babel-eslint": "^7.2.0",
     "commitizen": "^2.9.6",
     "conventional-changelog-cli": "^1.2.0",
     "eslint": "^3.17.1",
-    "eslint-config-standard": "^7.0.1",
     "eslint-formatter-pretty": "^1.1.0",
+    "eslint-plugin-flowtype": "^2.30.3",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-node": "^4.2.0",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^2.1.1",
+    "flow-bin": "^0.42.0",
     "husky": "^0.13.2",
     "validate-commit-msg": "^2.11.2"
-  }
+  },
+  "dependencies": {}
 }
