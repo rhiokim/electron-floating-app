@@ -14,15 +14,6 @@
     "precommit": "npm run lint && flow",
     "commitmsg": "npm run lint:msg"
   },
-  "eslintConfig": {
-    "parser": "babel-eslint",
-    "extends": [
-      "plugin:flowtype/recommended"
-    ],
-    "plugins": [
-      "flowtype"
-    ]
-  },
   "config": {
     "validate-commit-msg": {
       "preset": "angular",
@@ -31,6 +22,20 @@
     },
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "plugin:flowtype/recommended"
+    ],
+    "plugins": [
+      "flowtype"
+    ],
+    "settings": {
+      "flowtype": {
+        "onlyFilesWithFlowAnnotation": false
+      }
     }
   },
   "devDependencies": {
