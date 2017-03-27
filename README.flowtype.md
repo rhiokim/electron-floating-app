@@ -1,5 +1,11 @@
 ## How to setup flowtype
 
+### Prerequisite
+```
+$ brew update && brew install flow
+$ npm i -g flow-type
+```
+
 ### To use type checking on the fly
 * for SublimeText
   - [SublimeLinter-flow](https://github.com/SublimeLinter/SublimeLinter-flow)

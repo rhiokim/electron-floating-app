@@ -5,6 +5,6 @@
 ./src/
 
 [libs]
-./decls/
+./flow-typed/
 
 [options]
