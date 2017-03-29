@@ -1,7 +1,10 @@
+const Logger = require('./logger')
+
 class Rectangle {
   constructor (width, height) {
     this.width = width
     this.height = height
+    this.logger = new Logger()
   }
 
   get height () {
@@ -29,11 +32,15 @@ class Rectangle {
   }
 
   get area () {
-    return this.width * this.height
+    let result = this.width * this.height
+    this.logger.log(result)
+    return result
   }
 
   get circumference () {
-    return 2 * this.width + 2 * this.height
+    let result = 2 * this.width + 2 * this.height
+    this.logger.log(result)
+    return result
   }
 }
 
