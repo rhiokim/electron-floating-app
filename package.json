@@ -6,11 +6,13 @@
   "author": "Rhio Kim <rhio.kim@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "test": "./node_modules/.bin/mocha",
     "lint": "eslint --format=node_modules/eslint-formatter-pretty 'src/**/*.@(js|jsx)'",
     "lint:msg": "validate-commit-msg",
     "commit": "git cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
     "precommit": "npm run lint",
+    "prepush": "npm test",
     "commitmsg": "npm run lint:msg"
   },
   "eslintConfig": {
@@ -27,6 +29,7 @@
     }
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "commitizen": "^2.9.6",
     "conventional-changelog-cli": "^1.2.0",
     "eslint": "^3.17.1",
@@ -37,6 +40,9 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^2.1.1",
     "husky": "^0.13.2",
+    "mocha": "^3.2.0",
+    "sinon": "^2.1.0",
+    "sinon-chai": "^2.9.0",
     "validate-commit-msg": "^2.11.2"
   }
 }
