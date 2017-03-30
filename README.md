@@ -13,6 +13,8 @@
 - Use [Mocha](https://mochajs.org/), [Chai](http://chaijs.com/) and [Sinon](http://sinonjs.org/) for unit testing
 - Use [Istanbul](https://istanbul.js.org/) to show test coverage
 - Integrate [flowtype](http://flowtype.org) type system
+- Integrated with [coveralls.io](https://coveralls.io/) to show result of test-coverage on online
+- Integrated with [Circle CI](https://circleci.com) to run build & test continuously
 
 ## References
 - To test
