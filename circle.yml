@@ -14,9 +14,7 @@ dependencies:
 test:
   # override:
   post:
-    - npm test
     - npm run coverage # generate result of test coverage
-    - npm run coverage:test # show result of test coverage
     - npm run coveralls
 
 ## Customize checkout
