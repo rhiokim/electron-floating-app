@@ -1,6 +1,6 @@
 # .seed
 
-[![CircleCI](https://circleci.com/gh/rhiokim/.seed.svg?style=svg)](https://circleci.com/gh/rhiokim/.seed) [![Coverage Status](https://coveralls.io/repos/github/rhiokim/.seed/badge.svg?branch=master)](https://coveralls.io/github/rhiokim/.seed?branch=master)
+[![CircleCI](https://circleci.com/gh/rhiokim/.seed.svg?style=svg)](https://circleci.com/gh/rhiokim/.seed) [![Coverage Status](https://coveralls.io/repos/github/rhiokim/.seed/badge.svg?branch=master)](https://coveralls.io/github/rhiokim/.seed?branch=master) [![Dependency Status](https://dependencyci.com/github/rhiokim/.seed/badge)](https://dependencyci.com/github/rhiokim/.seed)
 
 ## Features
 
