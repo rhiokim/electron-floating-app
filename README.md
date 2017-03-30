@@ -1,5 +1,7 @@
 # .seed
 
+[![Coverage Status](https://coveralls.io/repos/github/rhiokim/.seed/badge.svg?branch=master)](https://coveralls.io/github/rhiokim/.seed?branch=master)
+
 ## Features
 
 - Use [Commitizen](https://github.com/commitizen/cz-cli) to produce commit message according to [AngularJS convention](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#-git-commit-guidelines)
