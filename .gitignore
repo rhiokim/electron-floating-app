@@ -17,3 +17,6 @@ v8.log
 
 # flowtype
 flow-typed/npm
+
+# nyc (istanbul cli)
+.nyc_output

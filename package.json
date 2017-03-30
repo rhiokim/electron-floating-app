@@ -8,7 +8,9 @@
   "scripts": {
     "lint": "eslint --format=node_modules/eslint-formatter-pretty 'src/**/*.@(js|jsx)'",
     "lint:msg": "validate-commit-msg",
-    "test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha",
+    "test": "mocha",
+    "coverage": "nyc --reporter=json --reporter=lcov mocha",
+    "coverage:test": "nyc report",
     "commit": "git cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
     "precommit": "npm run lint",
@@ -42,6 +44,7 @@
     "husky": "^0.13.2",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
+    "nyc": "^10.2.0",
     "sinon": "^2.1.0",
     "sinon-chai": "^2.9.0",
     "validate-commit-msg": "^2.11.2"
