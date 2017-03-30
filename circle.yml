@@ -6,15 +6,16 @@ dependencies:
   override:
     - npm i -D
 
-general:
-  branches:
-    only:
-      - ci
+# general:
+#   branches:
+#     only:
+#       - ci
       # https://circleci.com/docs/1.0/configuration/#branches
 test:
   # override:
   post:
     - npm test
+    - npm run coverage:test # show result of test coverage
 
 ## Customize checkout
 # checkout:
