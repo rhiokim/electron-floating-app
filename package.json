@@ -1,6 +1,6 @@
 {
   "name": "bare",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "main": "index.js",
   "repository": "git@github.com:rhiokim/.bare.git",
   "author": "Rhio Kim <rhio.kim@gmail.com>",
@@ -27,10 +27,11 @@
       "modules": true,
       "destructuring": true
     },
-    "globals": {
-    },
+    "globals": {},
     "plugins": [],
-    "extends": ["standard"],
+    "extends": [
+      "standard"
+    ],
     "rules": {
       "object-property-newline": "off"
     }
