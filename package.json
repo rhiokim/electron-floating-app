@@ -8,6 +8,7 @@
   "scripts": {
     "lint": "eslint --format=node_modules/eslint-formatter-pretty 'src/**/*.@(js|jsx)'",
     "lint:msg": "validate-commit-msg",
+    "format": "prettier-eslint --write 'src/**/*.@(js|jsx)'",
     "test": "mocha",
     "coverage": "nyc --reporter=json --reporter=lcov --reporter=text mocha",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
