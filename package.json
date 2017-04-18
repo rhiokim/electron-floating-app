@@ -18,7 +18,21 @@
     "commitmsg": "npm run lint:msg"
   },
   "eslintConfig": {
-    "extends": "standard"
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "ecmaFeatures": {
+      "modules": true,
+      "destructuring": true
+    },
+    "globals": {
+    },
+    "plugins": [],
+    "extends": ["standard"],
+    "rules": {
+      "object-property-newline": "off"
+    }
   },
   "config": {
     "validate-commit-msg": {
@@ -33,21 +47,21 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "commitizen": "^2.9.6",
-    "conventional-changelog-cli": "^1.2.0",
-    "coveralls": "^2.12.0",
-    "eslint": "^3.17.1",
-    "eslint-config-standard": "^7.0.1",
+    "conventional-changelog-cli": "^1.3.1",
+    "coveralls": "^2.13.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
     "eslint-formatter-pretty": "^1.1.0",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-node": "^4.2.0",
+    "eslint-plugin-node": "^4.2.2",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^2.1.1",
-    "husky": "^0.13.2",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.13.3",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "nyc": "^10.2.0",
     "sinon": "^2.1.0",
     "sinon-chai": "^2.9.0",
-    "validate-commit-msg": "^2.11.2"
+    "validate-commit-msg": "^2.12.1"
   }
 }
