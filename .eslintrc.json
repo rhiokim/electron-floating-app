@@ -1,4 +1,5 @@
 {
+  "parser": "babel-eslint",
   "env": {
     "node": true,
     "es6": true
@@ -9,8 +10,18 @@
   },
   "globals": {
   },
-  "plugins": [],
-  "extends": ["standard"],
+  "plugins": [
+    "flowtype"
+  ],
+  "extends": [
+    "standard",
+    "standard-flow"
+  ],
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": false
+    }
+  },
   "rules": {
     "object-property-newline": "off"
   }
