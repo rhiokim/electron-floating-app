@@ -14,7 +14,7 @@
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "commit": "git cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
-    "precommit": "npm run lint",
+    "precommit": "npm run format && npm run lint",
     "prepush": "npm test",
     "commitmsg": "npm run lint:msg"
   },
