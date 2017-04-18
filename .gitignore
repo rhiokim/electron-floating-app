@@ -17,12 +17,6 @@ v8.log
 
 # flowtype
 flow-typed/npm
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 # nyc (istanbul cli)
 .nyc_output
-=======
->>>>>>> 3d360aaa494d1622171461e9190606d8727fb563
-=======
->>>>>>> 3d360aaa494d1622171461e9190606d8727fb563
