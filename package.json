@@ -5,6 +5,7 @@
   "repository": "git@github.com:rhiokim/.seed.git",
   "author": "Rhio Kim <rhio.kim@gmail.com>",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "lint": "eslint --format=node_modules/eslint-formatter-pretty 'src/**/*.@(js|jsx)'",
     "flow": "flow",
