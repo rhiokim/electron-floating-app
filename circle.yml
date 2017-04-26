@@ -4,7 +4,9 @@ machine:
 
 dependencies:
   override:
-    - npm i -D
+    - yarn
+  cache_directories:
+    - ~/.cache/yarn
 
 # general:
 #   branches:
@@ -12,10 +14,10 @@ dependencies:
 #       - ci
       # https://circleci.com/docs/1.0/configuration/#branches
 test:
-  # override:
-  post:
-    - npm run coverage # generate result of test coverage
-    - npm run coveralls
+  override:
+  # post:
+    - yarn run coverage # generate result of test coverage
+    - yarn run coveralls
 
 ## Customize checkout
 # checkout:
