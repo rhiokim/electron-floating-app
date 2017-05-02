@@ -1,0 +1,37 @@
+machine:
+  node:
+    version: 7.7.4
+
+dependencies:
+  override:
+    - yarn
+  cache_directories:
+    - ~/.cache/yarn
+
+# general:
+#   branches:
+#     only:
+#       - ci
+      # https://circleci.com/docs/1.0/configuration/#branches
+test:
+  override:
+  # post:
+    - yarn run coverage # generate result of test coverage
+    - yarn run coveralls
+
+## Customize checkout
+# checkout:
+#   post:
+
+
+## Customize deployment commands
+# deployment:
+#   staging:
+#     branch: master
+#     heroku:
+#       appname: foo-bar-123
+
+## Custom notifications
+# notify:
+#   webhooks:
+#     - url: https://someurl.com/hooks/circle
