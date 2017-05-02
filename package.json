@@ -1,8 +1,8 @@
 {
-  "name": "seed",
-  "version": "1.2.3",
+  "name": "todo",
+  "version": "0.0.1",
   "main": "index.js",
-  "repository": "git@github.com:rhiokim/.seed.git",
+  "repository": "git@github.com:rhiokim/todo.git",
   "author": "Rhio Kim <rhio.kim@gmail.com>",
   "license": "MIT",
   "private": true,
