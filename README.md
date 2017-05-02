@@ -1,4 +1,4 @@
-# .seed
+# .seed-electron
 
 [![CircleCI](https://circleci.com/gh/rhiokim/.seed.svg?style=svg)](https://circleci.com/gh/rhiokim/.seed) [![Coverage Status](https://coveralls.io/repos/github/rhiokim/.seed/badge.svg?branch=master)](https://coveralls.io/github/rhiokim/.seed?branch=master) [![Dependency Status](https://dependencyci.com/github/rhiokim/.seed/badge)](https://dependencyci.com/github/rhiokim/.seed)
 
@@ -15,6 +15,13 @@
 - Integrate [flowtype](http://flowtype.org) type system
 - Integrated with [coveralls.io](https://coveralls.io/) to show result of test-coverage on online
 - Integrated with [Circle CI](https://circleci.com) to run build & test continuously
+
+## How to run
+
+```
+$ yarn
+$ yarn start
+```
 
 ## References
 - To test
