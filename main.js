@@ -6,13 +6,15 @@ let willQuit = false
 
 function createWindow () {
   mainWindow = new BrowserWindow({
-    width: 800,
-    maxWidth: 800,
-    height: 600,
+    width: 780,
+    maxWidth: 780,
+    height: 130,
     fullscreenable: false,
-    backgroundColor: '#403F4D'
+    resizable: true,
+    frame: false,
+    transparent: true
   })
-
+  mainWindow.setAlwaysOnTop(true)
   mainWindow.loadURL(`file://${__dirname}/index.html`)
 }
 

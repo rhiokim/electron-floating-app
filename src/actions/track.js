@@ -4,14 +4,14 @@ import * as actionTypes from '../constants/actionTypes'
 type SetTracksAction = {
   type: string,
   tracks: Array<Track>
-}
+};
 
 type PlayTrackAction = {
   type: string,
   track: Track
-}
+};
 
-type Action = SetTracksAction | PlayTrackAction
+type Action = SetTracksAction | PlayTrackAction;
 
 export const setTracks = (tracks: Array<Track>): Action => {
   return {

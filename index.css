@@ -1,0 +1,10 @@
+
+html, body {
+  background: rgba(0, 0, 0, 0);
+  text-align: center;
+  -webkit-app-region: drag;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
