@@ -6,9 +6,13 @@
 
 ## Features
 
-Actually, there is no feature. It's just proof of concept
+Actually, there is no feature. It's just proof of concept to realize floating application with Electron and SVG animation
+
+You can see 4 style.css in `index.html` and then if you want to change the style just clean the comment block after that you need to adjust mainBrowser configuration `width` and `height` properties
 
 ## How to run
+
+After clone this repository
 
 ```
 $ yarn
